@@ -94,6 +94,7 @@ a {
     position: absolute;
     width: auto;
     height: 120%;
+    overflow: hidden;
 }
 
 /* ********** section(common) ********** */
@@ -155,8 +156,8 @@ a {
     list-style: none;
 }
 
-.president-image {
-    width: 100%;
+#president-image {
+    width: 300px;
     height: auto;
     position: relative;
 }
@@ -387,7 +388,7 @@ footer {
     }
 
     .logo {
-        width: 300px;
+        width: 250px;
     }
 
     .sp-nav {
