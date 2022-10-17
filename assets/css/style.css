@@ -386,6 +386,10 @@ footer {
         display: none;
     }
 
+    .logo {
+        width: 300px;
+    }
+
     .sp-nav {
         display: inline;
     }
@@ -402,7 +406,7 @@ footer {
         z-index: 3;
         width: 30px;
         height: 25px;
-        margin: 15px 10px;
+        margin: 15px 50px 10px 10px;
     }
 
     label .burger::before,
@@ -514,6 +518,10 @@ footer {
     .president-section {
         display: flex;
         flex-flow: column-reverse;
+    }
+
+    .president-image {
+        width: 100%;
     }
 
     .company-activities-title {
