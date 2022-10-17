@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="業務効率化を求める皆様へアプリケーションや機会化を提供する会社">
+
+  <!-- 利用するCSSファイル -->
+  <link rel="stylesheet" type="text/css" href="assets/css/sanitize.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- 利用するフォントURL -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 利用するJSファイル -->
+  <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/slider.js" defer></script>
+  <script src="https://kit.fontawesome.com/9b69c5ff83.js" crossorigin="anonymous"></script>
+
+  <title>株式会社MGSystem</title>
+
+</head>
+
+<body>
+
+  <!-- /* ==================================
+        Header
+    ================================== */ -->
+  <header class="page-header wrapper">
+    <h1>
+      <a href="index.html"><img class="logo" src="assets/images/logo.png" alt="MGSystem"></a>
+    </h1>
+    <nav class="pc-nav">
+      <ul class="main-nav">
+        <li class="main-contents "><a class="contents-link fontTimesNewRoman" href="#hero-section">Top</a></li>
+        <li class="main-contents "><a class="contents-link fontTimesNewRoman" href="#president-section">President</a></li>
+        <li class="main-contents "><a class="contents-link fontTimesNewRoman" href="#company-section">Company</a></li>
+      </ul>
+    </nav>
+
+    <div class="sp-nav">
+      <input type="checkbox" id="hamburger">
+      <label for="hamburger">
+        <span class="burger">
+          <span class="bar"></span>
+        </span>
+      </label>
+      <label class="light-dark" for="hamburger"></label>
+      <div id="menu">
+        <a href="#hero-section">Top</a>
+        <a href="#president-section">President</a>
+        <a href="#company-section">Company</a>
+      </div>
+    </div>
+
+  </header>
+
+
+
+  <!-- /* ==================================
+      Hero
+  ================================== */ -->
+  <section id="hero-section">
+    <div class="hero">
+      <strong>MGSystem</strong>
+      <!-- <p>私たちは顧客の想像しえない業務効率化を提供いたします</p> -->
+      <canvas id="canvas"></canvas>
+      <video autoplay loop muted preload>
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- /* ==================================
+        President-section
+    ================================== */ -->
+  <section id="president-section" class="section-title">
+    <h1 class="fontTimesNewRoman">President</h1>
+    <div class="president-section">
+
+      <div class="president-profile-section">
+        <h3>代表取締役プロフィール</h3>
+        <dl class="president-profile">
+          <dt class="president-profile-title">氏名　　</dt>
+          <dd class="president-profile-detail">毛木 晃貴(Koki mogi)</dd>
+          <dt class="president-profile-title">出身　　</dt>
+          <dd class="president-profile-detail">神奈川県平塚市</dd>
+          <dt class="president-profile-title">生年月日</dt>
+          <dd class="president-profile-detail">1995年8月24日</dd>
+          <dt class="president-profile-title">趣味　　</dt>
+          <dd class="president-profile-detail">読書・ランニング・ゴルフ</dd>
+          <dt class="president-profile-title">座右の銘</dt>
+          <dd class="president-profile-detail">勝ちに不思議な勝ちあり、負けに不思議な負けなし</dd>
+          <dt class="president-profile-title">最終学歴</dt>
+          <dd class="president-profile-detail">2018年 東海大学 政治経済学部卒</dd>
+        </dl>
+
+
+        <div>
+          <h3>職務経歴</h3>
+          <ul class="president-career">
+            <li class="president-career-detail">2018年　地方金融機関にて法人、個人営業として従事</li>
+            <li class="president-career-detail">2020年　IT企業のWebアプリケーション開発プログラマーとして従事</li>
+            <li class="president-career-detail">2022年　大手SES企業にてWebアプリケーション開発プログラマーとして従事</li>
+            <li class="president-career-detail">2022年　株式会社MGSystem 代表取締役に就任</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="president-image-control">
+
+        <div class="image-tools">
+          <div class="pagination" id="pagination">
+          </div>
+
+          <div class="image-component">
+            <div id="prevImage" class="prevImage fas fa-chevron-left"></div>
+            <div id="nextImage" class="nextImage fas fa-chevron-right"></div>
+          </div>
+
+        </div>
+
+        <div class="president-image">
+          <img id="president-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- /* ==================================
+        Company-section
+    ================================== */ -->
+  <section id="company-section" class="section-title">
+    <h1 class="fontTimesNewRoman">Company</h1>
+
+    <div class="company-activities-title">
+      <Strong class="company-activities">MGSystemはITソリューションを提供します</Strong>
+    </div>
+
+    <div >
+      <div class="company-activities-top">
+
+
+        <div>
+          <div class="company-activities-content"><span>ホームページ制作</span></div>
+          <div class="company-activities-content company-activities-content-below"><span>アプリケーション設計</span></div>
+        </div>
+        <div>
+          <div class="company-activities-content"><span>アプリケーション開発</span></div>
+          <div class="company-activities-content company-activities-content-below"><span>業務効率化コンサルタント</span></div>
+        </div>
+
+      </div>
+
+
+      <h3>得意言語</h3>
+      <div class="favorite-lang">
+        <div class="favorite-lang-component">
+          <p class="favorite-lang-detail">Java</p>
+          <img class="favorite-lang-img" src="assets/images/langLogo/java.svg" />
+        </div>
+        <div class="favorite-lang-component">
+          <p class="favorite-lang-detail">PHP</p>
+          <img class="favorite-lang-img" src="assets/images/langLogo/php.svg" />
+        </div>
+        <div class="favorite-lang-component">
+          <p class="favorite-lang-detail">JavaScript</p>
+          <img class="favorite-lang-img" src="assets/images/langLogo/javascript.svg" />
+        </div>
+        <div class="favorite-lang-component">
+          <p class="favorite-lang-detail">Html</p>
+          <img class="favorite-lang-img" src="assets/images/langLogo/html-5.svg" />
+        </div>
+        <div class="favorite-lang-component">
+          <p class="favorite-lang-detail">CSS</p>
+          <img class="favorite-lang-img" src="assets/images/langLogo/css-3.svg" />
+        </div>
+      </div>
+    </div>
+
+    <h3>得意ライブラリ</h3>
+    <div class="favorite-lang">
+      <div class="favorite-lang-component">
+        <p class="favorite-lang-detail">Spring</p>
+        <img class="favorite-lang-img" src="assets/images/langLogo/spring-icon.svg" />
+      </div>
+      <div class="favorite-lang-component">
+        <p class="favorite-lang-detail">Laravel</p>
+        <img class="favorite-lang-img" src="assets/images/langLogo/laravel.svg" />
+      </div>
+      <div class="favorite-lang-component">
+        <p class="favorite-lang-detail">React.js</p>
+        <img class="favorite-lang-img" src="assets/images/langLogo/react.svg" />
+      </div>
+      <div class="favorite-lang-component">
+        <p class="favorite-lang-detail">JQuery</p>
+        <img class="favorite-lang-img" src="assets/images/langLogo/jquery.svg" />
+      </div>
+    </div>
+
+    <h3>開発事例</h3>
+    <dl>
+      <dt class="project-title">　法人ホームページ新規作成</dt>
+      <dd>
+        弊社代表が設計からすべてを開発</br>
+        フロントエンド:Html・CSS・JavaScript</br>
+        バックエンド:なし</br>
+      </dd>
+      <dt class="project-title">　官公系工事会計システム機能追加</dt>
+      <dd>
+        弊社代表がプロジェクトメンバーとして開発</br>
+        フロントエンド:Html・CSS・JavaScript</br>
+        ┗━フレームワーク:JQuery</br>
+        バックエンド:Java </br>
+        ┗━フレームワーク:Spring-Boot
+      </dd>
+      <dt class="project-title">　官公系財務会計システム新規作成</dt>
+      <dd>
+        弊社代表がプロジェクトメンバーとして開発</br>
+        フロントエンド:Html・CSS・JavaScript</br>
+        ┗━フレームワーク:JQuery</br>
+        バックエンド:PHP </br>
+        ┗━フレームワーク:Laravel
+      </dd>
+      <dt class="project-title">　個人向けECショップ新規作成</dt>
+      <dd>
+        弊社代表が設計からすべてを開発</br>
+        フロントエンド:Html・CSS・JavaScript</br>
+        ┗━フレームワーク:React.js</br>
+        バックエンド:Java</br>
+        ┗━フレームワーク:Spring-Boot
+      </dd>
+    </dl>
+    <dt class="project-title">　個人向け家計簿アプリ</dt>
+    <dd>
+      弊社代表が設計からすべてを開発</br>
+      Swift、Uikit
+    </dd>
+  </dl>
+  </section>
+
+
+  <!-- /* ==================================
+        Footer
+    ================================== */ -->
+  <footer>
+    <div class="footer">
+
+
+      <div class="SNS">
+        <a href="https://twitter.com/mg_kk3939" target="_blank"><img class="SNS-logo" src="assets/images/Twitter.png" alt="twitter"></a>
+        <a href="https://www.instagram.com/flowlightyamada" target="_blank"><img class="SNS-logo" src="assets/images/Instagram.png" alt="instagram"></a>
+      </div>
+
+      <div class="footer-logo">
+        <img src="assets/images/logo.png" alt="">
+        <small class="footer-copy fontTimesNewRoman">Copyright ©MGSystem</small>
+      </div>
+
+
+      <div class="address">
+        <h3 class="address-label fontTimesNewRoman">ADDRESS</h3>
+        <div class="address-content fontTimesNewRoman">
+          〒259-0124<br />
+          神奈川県中郡二宮町山西175-9<br />
+          <a href="https://goo.gl/maps/KfyoCKvJ8a31zpop7" target="_blank">Google Map</a></br>
+          TEL: XXX-XXXX-XXXX</br>
+          Email: yamadayeah90@gmail.com
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

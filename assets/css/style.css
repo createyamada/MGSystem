@@ -1,0 +1,555 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+/* ********** Header ********** */
+
+.logo {
+    margin: 0
+}
+
+.page-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.main-contents {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.sp-nav {
+    display: none;
+}
+
+
+
+
+/* ********** Hero ********** */
+
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#canvas {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero>strong {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.hero>p {
+    z-index: 3;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero>video {
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    height: 120%;
+}
+
+/* ********** section(common) ********** */
+.section-title {
+    padding: 70px 30px;
+}
+
+.fontTimesNewRoman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* ********** president ********** */
+.section-title>strong {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.president-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.president-profile-section {
+    display: flex;
+    flex-flow: column;
+}
+
+.president-profile {
+    border-left: 4px solid black;
+}
+
+.president-profile .president-profile-title {
+    /* 左に寄せる */
+    float: left;
+    /* 後続の左寄せを解除 */
+    clear: left;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.president-profile .president-profile-detail {
+    margin-left: 60px;
+    padding: 4px 0 15px 100px;
+    float: left;
+}
+
+;
+
+.president-career {
+    list-style: none;
+}
+
+.president-career-detail {
+    margin-bottom: 40px;
+    list-style: none;
+}
+
+.president-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.image-tools {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.swiper-pagination-bullet {
+    width: 32px;
+    height: 2px;
+    background-color: #999;
+}
+
+.target {
+    background-color: black;
+}
+
+.image-component {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.president-image-control .prevImage,
+.president-image-control .nextImage {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.president-image-control .prevImage {
+    left: 0;
+}
+
+.president-image-control .nextImage {
+    right: 0;
+}
+
+.president-image-control .prevImage::before,
+.president-image-control .nextImage::before {
+    font-size: 30px;
+    color: #555;
+}
+
+.president-image-control .prevImage:hover,
+.president-image-control .nextImage:hover {
+    /* 透明度を下げる */
+    opacity: .5;
+}
+
+.president-image-control .prevImage.inActive,
+.president-image-control .nextImage.inActive {
+    opacity: .3;
+    pointer-events: none;
+}
+
+/* ********** Company ********** */
+
+.company-activities {
+    font-size: 70px;
+}
+
+
+
+.company-activities-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* .company-activities-content {
+    margin: 50px;
+    font-size: 25px;
+    text-shadow: 0px 20px 6px #ccc, 0px -20px 6px #ccc;
+} */
+
+.company-activities-content {
+    margin: 50px;
+    padding: 0;
+    font-size: 30px;
+    font-size: 3rem;
+    text-shadow: 0px 20px 6px #ccc, 0px -20px 6px #ccc;
+    position: relative;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.company-activities-content-below {
+    margin-top: 100px;
+}
+
+.company-activities-content span {
+    font-size: 18px;
+    font-size: 1.8rem;
+    display: block;
+}
+
+.company-activities-content:before {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 5px;
+    content: '';
+    /* border-radius: 3px; */
+    background: black;
+}
+
+.company-activities-content:before {
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 5px;
+    content: '';
+    /* border-radius: 3px; */
+    background: black;
+}
+
+.favorite-lang {
+    display: flex;
+    justify-content: center;
+}
+
+
+.favorite-lang-detail {
+    margin: 50px 50px 10px 50px;
+    font-size: 25px;
+}
+
+.favorite-lang-component {
+    justify-content: center;
+    text-align: center;
+}
+
+.favorite-lang-img {
+    width: 50px;
+    height: 50px;
+}
+
+.project-title {
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ********** footer ********** */
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.SNS {
+    justify-content: center;
+    text-align: center;
+}
+
+.SNS-logo {
+    margin: 10px;
+}
+
+.footer-logo {
+    justify-content: center;
+    text-align: center;
+}
+
+.address {
+    border: 1px solid white;
+    width: 20%;
+    position: relative;
+}
+
+.address-label {
+    background: black;
+    padding: 3px 10px;
+    color: white;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+.address-content {
+    text-align: center;
+    padding: 20px 5px;
+}
+
+
+.footer a {
+    color: #fff;
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+}
+
+/* ********** レスポンシブ対応 ********** */
+
+@media screen and (max-width: 768px) {
+
+
+
+    .pc-nav {
+        display: none;
+    }
+
+    .sp-nav {
+        display: inline;
+    }
+
+    #hamburger {
+        opacity: 0;
+        position: fixed;
+    }
+
+    label .burger {
+        position: fixed;
+        top: 1.3rem;
+        right: 1rem;
+        z-index: 3;
+        width: 30px;
+        height: 25px;
+        margin: 15px 10px;
+    }
+
+    label .burger::before,
+    label .burger::after,
+    label .burger .bar {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        content: "";
+        transition: all 0.5s;
+    }
+
+    label .burger::before {
+        top: 0;
+        transform-origin: top left;
+    }
+
+    label .burger::after {
+        bottom: 0;
+        width: 70%;
+        transform-origin: bottom left;
+
+    }
+
+    label .burger .bar {
+        top: 45%;
+    }
+
+    #menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #menu::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        width: 25rem;
+        background-color: white;
+        content: "";
+        transform: skewX(-15deg) translateX(100%);
+        transform-origin: bottom right;
+        /* transition: transform 0.3s; */
+    }
+
+    #menu a {
+        margin: 10px 0;
+        padding: 1px 20px;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        transform: translateX(300%);
+        transition: all 0.15s , transform 0.5s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    #hamburger:checked + label .burger::before,
+    #hamburger:checked + label .burger::after {
+        width: 110%;
+    }
+
+    #hamburger:checked + label .burger::before{
+        transform: rotate(45deg);
+    }
+
+    #hamburger:checked + label .burger::after {
+        transform: rotate(-45deg);
+    }
+
+    #hamburger:checked + label .burger .bar {
+        transform: scale(0);
+    }
+
+    #hamburger:checked ~ #menu::before {
+        transform: skewX(-15deg) translateX(0);
+    }
+
+    #hamburger:checked ~ #menu a {
+        transform: translateX(0);
+    }
+
+    #hamburger:checked ~ .light-dark {
+        background-color: #000;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+
+
+
+    .hero>strong {
+        font-size: 70px;
+    }
+
+    .president-section {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .company-activities-title {
+        text-align: center;
+    }
+
+    .company-activities {
+        font-size: 20px;
+    }
+
+    .company-activities-content span {
+        font-size: 20px;
+    }
+
+    .company-activities-top {
+        display: block;
+    }
+
+    .favorite-lang {
+        flex-wrap: wrap;
+    }
+
+    .company-activities-content-below {
+        margin: 50px;
+    }
+
+
+    .footer {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .address {
+        margin-top: 50px;
+        width: 60%;
+    }
+
+
+}
