@@ -43,6 +43,9 @@ a {
 }
 
 
+.br-resp {
+    display: none;
+}
 
 
 /* ********** Hero ********** */
@@ -395,6 +398,11 @@ footer {
         display: inline;
     }
 
+    .br-resp {
+        display: inline;
+    }
+    
+
     #hamburger {
         opacity: 0;
         position: fixed;
@@ -407,7 +415,7 @@ footer {
         z-index: 3;
         width: 30px;
         height: 25px;
-        margin: 15px 50px 10px 10px;
+        margin: 15px 10px;
     }
 
     label .burger::before,
