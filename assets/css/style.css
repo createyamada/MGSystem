@@ -557,6 +557,10 @@ footer {
         margin: 50px;
     }
 
+    .project-title {
+        font-size: 18px;
+    }
+
 
     .footer {
         display: flex;
