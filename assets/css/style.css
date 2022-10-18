@@ -398,6 +398,10 @@ footer {
         display: inline;
     }
 
+    .header-image {
+        margin: 0;
+    }
+
     .br-resp {
         display: inline;
     }
@@ -415,7 +419,8 @@ footer {
         z-index: 3;
         width: 30px;
         height: 25px;
-        margin: 15px 10px;
+        /* margin: 15px 10px; */
+        margin: 0;
     }
 
     label .burger::before,
