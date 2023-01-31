@@ -1,29 +1,25 @@
+const resHero = document.getElementById('resHero');
+const resPre = document.getElementById('resPre');
+const resCom = document.getElementById('resCom');
 const hum = document.getElementById('hamburger');
-const menuClose = document.getElementById('close');
-const nav = document.getElementsByClassName('sp-nav');
+
 
 // メニュークリック
-function onHeaderMenuClick (mode) {
-    switch (mode) {
-        // メニュークリック
-        case "menu":
-            nav[0].classList.add('toggle');
-            break;
-        //　クローズクリック
-        case "close":
-            nav[0].classList.remove('toggle');
-            break;
-        default:
-            break;
-      }
+function onHeaderMenuClick () {
+    hum.checked = false;
 }
 
-hum.onclick = function (e) {
-    console.log("メニュークリック",e);
-    onHeaderMenuClick('menu');
+resHero.onclick = function (e) {
+    console.log("メニュ要素クリック",e);
+    onHeaderMenuClick('close');
 }
 
-menuClose.onclick = function (e) {
-    console.log("クローズクリック",e);
+resPre.onclick = function (e) {
+    console.log("メニュ要素クリック",e);
+    onHeaderMenuClick('close');
+}
+
+resCom.onclick = function (e) {
+    console.log("メニュ要素クリック",e);
     onHeaderMenuClick('close');
 }
