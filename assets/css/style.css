@@ -505,7 +505,7 @@ footer {
     }
 
     #hamburger:checked ~ #menu::before {
-        transform: skewX(-15deg) translateX(0);
+        transform: skewX(-25deg) translateX(0);
     }
 
     #hamburger:checked ~ #menu a {
