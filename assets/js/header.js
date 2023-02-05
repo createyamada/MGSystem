@@ -58,3 +58,4 @@ window.addEventListener('scroll',function(){
         black.classList.add("nonDisp");
 	}
   })
+
