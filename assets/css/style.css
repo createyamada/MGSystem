@@ -8,7 +8,14 @@ body {
 /* ********** Header ********** */
 
 .logo {
-    margin: 0
+    margin: 0;
+    height:150px;
+    width: 150px;
+    padding: 0;
+}
+
+.nonDisp {
+    display: none;
 }
 
 .page-header {
@@ -347,6 +354,10 @@ footer {
     text-align: center;
 }
 
+#footer-logo {
+    width: 250px;
+}
+
 .address {
     border: 1px solid white;
     width: 20%;
@@ -391,7 +402,8 @@ footer {
     }
 
     .logo {
-        width: 250px;
+        width: 100px;
+        height: 100px;
     }
 
     .sp-nav {
@@ -577,6 +589,10 @@ footer {
         margin-top: 50px;
         display: flex;
         flex-flow: column;
+    }
+
+    #footer-logo {
+        width: 150px;
     }
 
     .address {
