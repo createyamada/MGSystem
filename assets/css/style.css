@@ -326,6 +326,10 @@ a {
     font-size: 20px;
 }
 
+.project-summary {
+    justify-content: center;
+}
+
 .site-url {
     font-size: 20px;
     text-decoration: underline;
@@ -346,9 +350,140 @@ footer {
     padding: 50px;
 }
 
+/* TODO：ここから適当に貼り付けたスタイル修正が必要 */
+
+container {
+  margin: 50px auto;
+  width: 90%;
+  display: none;
+}
+
+header h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.accordion {
+  background: #333;
+  width: 100%;
+  min-width: 800px;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0!important;
+}
+
+.tab {
+  display: inline-block;
+  background-color: #444;
+  border-right: #333 solid 1px;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative; 
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+  width: 450px;
+}
+
+.tab:hover .social a:before {
+  margin-left: -100px;
+}
+
+.tab:hover .social a:after {
+  margin-left: -5px;
+}
+
+.accordion .tab .social a {
+    font-size: 0;
+}
+
+.tab .content {
+  background-color: #fff;;
+  width:  360px;
+  height: 200px;
+  margin-left: 80px;
+  position: relative;
+  padding: 50px 0 0 15px;
+}
+
+.tab .content h1 {
+  font-size: 2.5rem;
+}
+
+.tab .content p {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+}
+.social a:before,
+.social a:after {
+  transition: all 0.4s ease-in-out 0.1s;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px ;
+  display: block;
+  font: normal 30px;
+  color: #fff;
+}
+
+.social a:after{
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+/* Add Icons */
+/* Social media links: youtube  */
+.youtube a:before,
+.youtube a:after {
+  content: url('../images/snsLogo/youtube.png');
+}
+
+.youtube a:after {
+  background-color: #f00;
+}
+/* Social media links: instagram  */
+.instagram a:before,
+.instagram a:after {
+  content: url('../images/snsLogo/instagram.png');
+}
+
+.instagram a:after {
+  background-color: #6dc993;
+}
+/* Social media links: twitter  */
+.twitter a:before,
+.twitter a:after {
+  content: url('../images/snsLogo/twitter.png');
+}
+
+.twitter a:after {
+  background-color: #00AEEF;
+}
+/* Social media links: github  */
+.github a:before,
+.github a:after {
+  content: url('../images/snsLogo/github.png');
+}
+
+.github a:after {
+  background-color: #00AEEF;
+}
+/* TODO：ここまで適当に貼り付けたスタイル修正が必要 */
+
 .SNS {
     justify-content: center;
     text-align: center;
+    display: none;
 }
 
 .SNS-logo {
@@ -590,11 +725,18 @@ footer {
         font-size: 18px;
     }
 
+    .accordion { 
+        display: none;
+    }
 
     .footer {
         margin-top: 50px;
         display: flex;
         flex-flow: column;
+    }
+
+    .SNS {
+        display: inline;
     }
 
     #footer-logo {
