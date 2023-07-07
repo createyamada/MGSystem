@@ -487,7 +487,8 @@ header h1 {
 }
 
 .SNS-logo {
-    margin: 10px;
+    margin: 12px;
+    width:40px;
 }
 
 .footer-logo {
@@ -715,6 +716,10 @@ header h1 {
 
     .favorite-lang {
         flex-wrap: wrap;
+    }
+
+    .flame {
+        font-size: 15px;
     }
 
     .company-activities-content-below {
