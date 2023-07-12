@@ -39,6 +39,10 @@ body {
     margin-left: 20px;
 }
 
+.contents-link {
+    color: white;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -461,7 +465,7 @@ header h1 {
 }
 
 .instagram a:after {
-  background-color: #6dc993;
+  background-color: #FF006F;
 }
 /* Social media links: twitter  */
 .twitter a:before,
@@ -479,7 +483,7 @@ header h1 {
 }
 
 .github a:after {
-  background-color: #00AEEF;
+  background-color: #6dc993;
 }
 /* TODO：ここまで適当に貼り付けたスタイル修正が必要 */
 
