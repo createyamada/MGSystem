@@ -315,6 +315,29 @@ a {
     height: 50px;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .project-table-title {
+    background: black;
+    color:white;
+  }
+  .project-table-subtitle {
+    background: #bbbb;
+  }
+
+  dd {
+    margin-top: 10px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+
 .project-title {
     margin-top: 10px;
     background-color: black;
