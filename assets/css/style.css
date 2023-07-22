@@ -279,7 +279,6 @@ a {
     width: 60px;
     height: 5px;
     content: '';
-    /* border-radius: 3px; */
     background: black;
 }
 
@@ -370,7 +369,7 @@ footer {
     padding: 50px;
 }
 
-/* TODO：ここから適当に貼り付けたスタイル修正が必要 */
+/* ********** footer　SNS　ZONE ********** */
 
 container {
   margin: 50px auto;
