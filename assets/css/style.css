@@ -145,9 +145,7 @@ a {
 }
 
 .president-profile .president-profile-title {
-    /* 左に寄せる */
     float: left;
-    /* 後続の左寄せを解除 */
     clear: left;
     margin-left: 10px;
     font-weight: 700;
@@ -228,7 +226,6 @@ a {
 
 .president-image-control .prevImage:hover,
 .president-image-control .nextImage:hover {
-    /* 透明度を下げる */
     opacity: .5;
 }
 
