@@ -311,7 +311,7 @@ a {
     height: 50px;
 }
 
-  dd table {
+.project-block table {
     border-collapse: collapse;
     width: 50%;
     margin-top: 10px;
@@ -325,7 +325,7 @@ a {
     background: #bbbb;
   }
 
-  dd {
+  .project-block {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -716,12 +716,20 @@ header h1 {
         flex-flow: column-reverse;
     }
 
+    .president-profile .president-profile-detail {
+        margin-left: 28px;
+    }
+
     .president-image {
         width: 100%;
     }
 
     .president-career {
         padding: 10px;
+    }
+
+    .president-career-detail {
+        font-size: 13px;
     }
 
     .company-activities-title {
@@ -756,12 +764,12 @@ header h1 {
         font-size: 18px;
     }
 
-    dd {
+    .project-block {
         margin-left: 10px;
         margin-inline-start: 0!important;
     }
 
-    dd table {
+    .project-block table {
         width: 100%;
     }
 
