@@ -311,9 +311,9 @@ a {
     height: 50px;
 }
 
-table {
+  dd table {
     border-collapse: collapse;
-    width: 100%;
+    width: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -327,11 +327,16 @@ table {
 
   dd {
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   th, td {
     border: 1px solid #ccc;
     padding: 8px;
+    text-align: center;
   }
 
 .project-title {
@@ -340,6 +345,7 @@ table {
     color: white;
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
 }
 
 .project-summary {
@@ -748,6 +754,15 @@ header h1 {
 
     .project-title {
         font-size: 18px;
+    }
+
+    dd {
+        margin-left: 10px;
+        margin-inline-start: 0!important;
+    }
+
+    dd table {
+        width: 100%;
     }
 
     .accordion { 
