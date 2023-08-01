@@ -734,7 +734,7 @@ header h1 {
     }
 
     .company-activities {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .company-activities-content span {
@@ -751,6 +751,10 @@ header h1 {
 
     .flame {
         font-size: 15px;
+    }
+
+    .company-activities-content {
+        margin: 50px 12px!important;
     }
 
     .company-activities-content-below {
