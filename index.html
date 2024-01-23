@@ -37,14 +37,15 @@
     ================================== */ -->
   <header class="page-header wrapper">
     <h1 class="header-image">
-      <a href="index.html"><img id="whiteLogo" class="logo" src="assets/images/companylogo/MGLogoWhite.png" alt="MGSystem"></a>
-      <a href="index.html"><img id="blackLogo" class="logo nonDisp" src="assets/images/companylogo/MGLogoBlack.png" alt="MGSystem"></a>
+      <a href="index.html"><img id="whiteLogo" class="logo" src="assets/images/companyLogo/MGLogoWhite.png" alt="MGSystem"></a>
+      <a href="index.html"><img id="blackLogo" class="logo nonDisp" src="assets/images/companyLogo/MGLogoBlack.png" alt="MGSystem"></a>
     </h1>
     <nav class="pc-nav">
       <ul class="main-nav">
         <li class="main-contents "><a class="contents-link fontTimesNewRoman top-menu" href="#hero-section">Top</a></li>
         <li class="main-contents "><a class="contents-link fontTimesNewRoman top-menu" href="#president-section">President</a></li>
         <li class="main-contents "><a class="contents-link fontTimesNewRoman top-menu" href="#company-section">Company</a></li>
+        <li class="main-contents "><a class="contents-link fontTimesNewRoman top-menu" href="#develop-section">Develop</a></li>
       </ul>
     </nav>
 
@@ -60,6 +61,7 @@
         <a id="resHero" class="resMenu" href="#hero-section">Top</a>
         <a id="resPre" class="resMenu" href="#president-section">President</a>
         <a id="resCom" class="resMenu" href="#company-section">Company</a>
+        <a id="resDev" class="resMenu" href="#develop-section">Develop</a>
       </div>
     </div>
 
@@ -82,14 +84,11 @@
 
 
 
-
-
-
   <!-- /* ==================================
         President-section
     ================================== */ -->
-  <section id="president-section" class="section-title whiteArea">
-    <h1 class="fontTimesNewRoman">President</h1>
+  <section id="president-section" class="whiteArea">
+    <h1 class="fontTimesNewRoman section-title">President　-代表取締役-</h1>
     <div class="president-section">
 
       <div class="president-profile-section">
@@ -114,8 +113,8 @@
           <h3>職務経歴</h3>
           <ul class="president-career">
             <li class="president-career-detail">2018年<br class="br-resp"/>　地方金融機関にて法人、個人営業</li>
-            <li class="president-career-detail">2020年<br class="br-resp"/>　IT企業のWebApp開発SE</li>
-            <li class="president-career-detail">2022年<br class="br-resp"/>　大手SES企業にてWebApp開発SE</li>
+            <li class="president-career-detail">2020年<br class="br-resp"/>　IT企業のWebアプリケーション開発SE、サブリーダー</li>
+            <li class="president-career-detail">2022年<br class="br-resp"/>　大手SES企業にてWebアプリケーション開発SE</li>
             <li class="president-career-detail">2022年<br class="br-resp"/>　株式会社MGSystems 代表取締役</li>
           </ul>
         </div>
@@ -145,91 +144,127 @@
   <!-- /* ==================================
         Company-section
     ================================== */ -->
-  <section id="company-section" class="section-title">
-    <h1 class="fontTimesNewRoman">Company</h1>
+  <section id="company-section">
+    <h1 class="fontTimesNewRoman section-title">Company　-企業-</h1>
 
-    <div class="company-activities-title">
-      <Strong class="company-activities">MGSystems offers you ITSolution</Strong>
+    <div class="company-info">
+      <!-- <div class="company-activities-title">
+        <Strong class="company-activities">MGSystems offers you ITSolution</Strong>
+      </div> -->
+  
+      <div class="company-activities-container">
+        <div class="company-activities-60">
+          ホームページ制作
+        </div>
+        <div class="company-activities-40">
+          ITコンサルタント
+        </div>
+      </div>
+
+      <div class="company-activities-container">
+        <div class="company-activities-40">
+          アプリケーション開発
+        </div>
+        <div class="company-activities-60">
+          アプリケーション設計
+        </div>
+      </div>
+      <div class="company-activities-container">
+        <div class="company-activities-60">
+          物理学研究
+        </div>
+        <div class="company-activities-40">
+          悩み相談
+        </div>
+      </div>
+
+
+
+      <!-- <div>
+        <div class="company-activities-top">
+          <div>
+            <div class="company-activities-content"><span>ホームページ制作</span></div>
+            <div class="company-activities-content company-activities-content-below"><span>アプリケーション設計</span></div>
+          </div>
+          <div>
+            <div class="company-activities-content"><span>ブラックホール研究</span></div>
+          </div>
+          <div>
+            <div class="company-activities-content"><span>アプリケーション開発</span></div>
+            <div class="company-activities-content company-activities-content-below"><span>業務効率化コンサルタント</span></div>
+          </div>
+        </div>
+      </div> -->
     </div>
 
-    <div >
-      <div class="company-activities-top">
+  </section>
 
+  <!-- /* ==================================
+        Develop-section
+    ================================== */ -->
+  <section id="develop-section">
+    <h1 class="fontTimesNewRoman section-title">Develop Example　-開発事例-</h1>
+      <div class="development-example">
+        <div class="development-example-title">
+          株式会社MGSystemsは、新しい発想をもって様々なシステム、アプリケーション、ゲームを開発しています。
+        </div>
+        <div class="development-example-details">
+          <div class="development-example-content">
+            <div>
+              <img class="project-img" src="assets/images/projectLogo/phythics.png" />
+            </div>
+            <div>
+              <h3 class="project-title">物理計算システム</h3>
+              <p class="project-block-desc">
+                代表が物理学の面白さに気が付きプログラミングを利用して、様々な物理の運動をシミュレーションするシステムです。
+                物理学の王道である運動方程式を利用して放物運動の予測等をでき、プログラムにも、物理学にも興味を持ってもらえるシステムだと思います。<br>
+              </p>
+              <p class="project-block-url">サイトURL：<a href="https://calc-physics-system.onrender.com" target="_blank" rel="物理計算システム" class="site-url">物理シミュレーションシステム</a></p>
+              <p class="project-block-dev">
+                担当工程：弊社代表が要件定義、設計、開発、デプロイを行う<br>
+                開発環境：Html／css／JavaScript／Vuejs／PHP／Laravel／Docker
+              </p>
+            </div>
+          </div>
 
-        <div>
-          <div class="company-activities-content"><span>ホームページ制作</span></div>
-          <div class="company-activities-content company-activities-content-below"><span>アプリケーション設計</span></div>
-        </div>
-        <div>
-          <div class="company-activities-content"><span>ブラックホール研究</span></div>
-        </div>
-        <div>
-          <div class="company-activities-content"><span>アプリケーション開発</span></div>
-          <div class="company-activities-content company-activities-content-below"><span>業務効率化コンサルタント</span></div>
-        </div>
+          <div class="development-example-content">
+            <div>
+              <img class="project-img" src="assets/images/projectLogo/graph.png" />
+            </div>
+            <div>
+              <h3 class="project-title">貯金偏差値算出システム</h3>
+              <p class="project-block-desc">
+                代表の金融機関での就業経験を活かして、自身が他人と比べてどのくらい貯金ができているのか偏差値化するシステムです。
+                e-statという外部APIを利用して、自身がどのくらいの位置にいるのかを可視化して貯金に対して意識を変えるシステムだと思います。<br>
+              </p>
+              <p class="project-block-url">サイトURL：<a href="https://saving-deviation-com-3yka.onrender.com" target="_blank" rel="貯金偏差値算出システム" class="site-url">貯金偏差値算出システム</a></p>
+              <p class="project-block-dev">
+                担当工程：弊社代表が要件定義、設計、開発、デプロイを行う<br>
+                開発環境：Html／css／JavaScript／jQuery／PHP／Laravel／Docker
+              </p>
+            </div>
+          </div>
 
-      </div>
-
-
-      <h3>得意言語</h3>
-      <div class="favorite-lang">
-        <div class="favorite-lang-component">
-          <p class="favorite-lang-detail">Java</p>
-          <img class="favorite-lang-img" src="assets/images/langLogo/java.svg" />
-        </div>
-        <div class="favorite-lang-component">
-          <p class="favorite-lang-detail">PHP</p>
-          <img class="favorite-lang-img" src="assets/images/langLogo/php.svg" />
-        </div>
-        <div class="favorite-lang-component">
-          <p class="favorite-lang-detail">Dart</p>
-          <img class="favorite-lang-img" src="assets/images/langLogo/dart.svg" />
-        </div>
-        <div class="favorite-lang-component">
-          <p class="favorite-lang-detail">JS</p>
-          <img class="favorite-lang-img" src="assets/images/langLogo/javascript.svg" />
-        </div>
-        <div class="favorite-lang-component">
-          <p class="favorite-lang-detail">Html</p>
-          <img class="favorite-lang-img" src="assets/images/langLogo/html-5.svg" />
-        </div>
-        <div class="favorite-lang-component">
-          <p class="favorite-lang-detail">CSS</p>
-          <img class="favorite-lang-img" src="assets/images/langLogo/css-3.svg" />
+          <div class="development-example-content">
+            <div>
+              <img class="project-img" src="assets/images/projectLogo/browser.jpeg" />
+            </div>
+            <div>
+              <h3 class="project-title">企業ホームページ</h3>
+              <p class="project-block-desc">
+                代表が自身で作成した本ホームページです。
+                デザイン、コーディングを行い、ユーザビリティーを考え作成した、見やすいホームページになっていると思います。<br>
+              </p>
+              <p class="project-block-url">サイトURL：<a href="https://saving-deviation-com-3yka.onrender.com" target="_blank" rel="株式会社MGSystems" class="site-url">株式会社MGSystems</a></p>
+              <p class="project-block-dev">
+                担当工程：弊社代表が要件定義、設計、デザイン設計、開発、デプロイを行う<br>
+                開発環境：Html／css／JavaScript／jQuery
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <h3>得意ライブラリ</h3>
-    <div class="favorite-lang">
-      <div class="favorite-lang-component">
-        <p class="favorite-lang-detail flame">Spring</p>
-        <img class="favorite-lang-img" src="assets/images/langLogo/spring-icon.svg" />
-      </div>
-      <div class="favorite-lang-component">
-        <p class="favorite-lang-detail flame">Laravel</p>
-        <img class="favorite-lang-img" src="assets/images/langLogo/laravel.svg" />
-      </div>
-      <div class="favorite-lang-component">
-        <p class="favorite-lang-detail flame">Flutter</p>
-        <img class="favorite-lang-img" src="assets/images/langLogo/flutter.svg" />
-      </div>
-      <div class="favorite-lang-component">
-        <p class="favorite-lang-detail flame">React.js</p>
-        <img class="favorite-lang-img" src="assets/images/langLogo/react.svg" />
-      </div>
-      <div class="favorite-lang-component">
-        <p class="favorite-lang-detail flame">Vue.js</p>
-        <img class="favorite-lang-img" src="assets/images/langLogo/vue.svg" />
-      </div>
-      <div class="favorite-lang-component">
-        <p class="favorite-lang-detail flame">jQuery</p>
-        <img class="favorite-lang-img" src="assets/images/langLogo/jquery.svg" />
-      </div>
-    </div>
-
-    <h3>開発事例</h3>
-    <dl>
+    <!-- <dl>
       <dt class="project-title">　物理計算システム</dt>
       <dd class="project-block">
         弊社代表が設計からすべてを開発</br>
@@ -261,8 +296,8 @@
           <tr>
             <td>Laravel</td>
           </tr>
-          <tr>
-            <td>URL:<a href="https://calc-physics-system.onrender.com"  target="_blank" class="site-url">物理計算シミュレーション</a></td>
+          <tr>>
+            <td>URL:<a href="https://calc-physics-system.onrender.com"  target="_blank" class="site-url"物理計算シミュレーション</a></td>
           </tr>
         </table>
       </dd>
@@ -389,7 +424,6 @@
       </table>
     </dd>
   </dl>
-<!-- 　ここからかくしてボタン押下で表示できるようにする -->
 <details class="project-summary">
   <summary>上記以前の情報を見る</summary>
   <dt class="project-title">　個人向け家計簿アプリ</dt>
@@ -519,14 +553,72 @@
     </table>
   </dd>
 </dl>
-</details>
+</details> -->
+
+<h3 class="favorite-title">得意言語</h3>
+<div class="favorite-lang">
+  <div class="favorite-lang-component">
+    <img class="favorite-lang-img" src="assets/images/langLogo/java.svg" />
+    <p class="favorite-lang-detail">Java</p>
+  </div>
+  <div class="favorite-lang-component">
+    <img class="favorite-lang-img" src="assets/images/langLogo/php.svg" />
+    <p class="favorite-lang-detail">PHP</p>
+  </div>
+  <div class="favorite-lang-component">
+    <img class="favorite-lang-img" src="assets/images/langLogo/dart.svg" />
+    <p class="favorite-lang-detail">Dart</p>
+  </div>
+  <div class="favorite-lang-component">
+    <img class="favorite-lang-img" src="assets/images/langLogo/javascript.svg" />
+    <p class="favorite-lang-detail">JS</p>
+  </div>
+  <div class="favorite-lang-component">
+    <img class="favorite-lang-img" src="assets/images/langLogo/html-5.svg" />
+    <p class="favorite-lang-detail">Html</p>
+  </div>
+  <div class="favorite-lang-component">
+    <img class="favorite-lang-img" src="assets/images/langLogo/css-3.svg" />
+    <p class="favorite-lang-detail">CSS</p>
+  </div>
+</div>
+</div>
+
+<h3 class="favorite-title">得意ライブラリ</h3>
+<div class="favorite-lang">
+<div class="favorite-lang-component">
+  <img class="favorite-lang-img" src="assets/images/langLogo/spring-icon.svg" />
+  <p class="favorite-lang-detail flame">Spring</p>
+</div>
+<div class="favorite-lang-component">
+  <img class="favorite-lang-img" src="assets/images/langLogo/laravel.svg" />
+  <p class="favorite-lang-detail flame">Laravel</p>
+</div>
+<div class="favorite-lang-component">
+  <img class="favorite-lang-img" src="assets/images/langLogo/flutter.svg" />
+  <p class="favorite-lang-detail flame">Flutter</p>
+</div>
+<div class="favorite-lang-component">
+  <img class="favorite-lang-img" src="assets/images/langLogo/react.svg" />
+  <p class="favorite-lang-detail flame">React.js</p>
+</div>
+<div class="favorite-lang-component">
+  <img class="favorite-lang-img" src="assets/images/langLogo/vue.svg" />
+  <p class="favorite-lang-detail flame">Vue.js</p>
+</div>
+<div class="favorite-lang-component">
+  <img class="favorite-lang-img" src="assets/images/langLogo/jquery.svg" />
+  <p class="favorite-lang-detail flame">jQuery</p>
+</div>
+</div>
+
 
   </section>
 
   <div class="container">
-    <header>
+    <!-- <header>
       <h1>Follow Me On Social Media</h1>
-    </header>
+    </header> -->
     <ul class="accordion">
       <li class="tab">
         <div class="social youtube">
@@ -584,7 +676,7 @@
       </div>
 
       <div class="footer-logo">
-        <img id="footer-logo" src="assets/images/companylogo/MGLogoWhite.png" alt="">
+        <img id="footer-logo" src="assets/images/companyLogo/MGLogoWhite.png" alt="">
         <small class="footer-copy fontTimesNewRoman">Copyright ©MGSystems</small>
       </div>
 

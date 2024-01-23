@@ -1,6 +1,7 @@
 const resHero = document.getElementById('resHero');
 const resPre = document.getElementById('resPre');
 const resCom = document.getElementById('resCom');
+const resDev = document.getElementById('resDev');
 const hum = document.getElementById('hamburger');
 
 
@@ -22,6 +23,9 @@ resCom.onclick = function (e) {
     onHeaderMenuClick('close');
 }
 
+resDev.onclick = function (e) {
+    onHeaderMenuClick('close');
+}
 
 window.addEventListener('scroll',function(){
     logoColorChange();
@@ -34,7 +38,6 @@ window.addEventListener('scroll',function(){
     const areaTop  = WhiteAreaRect.top + scrollY;
 
 	if (scrollTop > areaTop ) {
-        console.log("whiteクラスに入りました")
         // 画像要素を取得
         const white = document.getElementById("whiteLogo");
         const black = document.getElementById("blackLogo");
@@ -50,7 +53,6 @@ window.addEventListener('scroll',function(){
         }   
 
 	} else {
-		console.log("blackクラスです")
         // 画像要素を取得
         const white = document.getElementById("whiteLogo");
         const black = document.getElementById("blackLogo");

@@ -35,7 +35,6 @@ function changeSlideStatus() {
 
   // 指定したclass名の最初の要素を取得
   for (let i = 1; i < imageTotalNumber + 1; i++) {
-    console.log(i);
     if (i === currentSlide) {
       let current = document.getElementsByClassName("swiper-pagination-bullet")[
         currentSlide - 1
