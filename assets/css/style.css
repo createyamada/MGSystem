@@ -249,7 +249,7 @@ a {
   margin: 5% 0;
 }
 
-.profile-history p .profile-history p {
+.profile-history p {
   margin: 0;
 }
 
@@ -444,7 +444,7 @@ a {
 
 #develop-section {
   background-image: url("../images/developExampleImage/background.jpg");
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   position: relative;
   /* background-size: cover; */
   z-index: 1;
