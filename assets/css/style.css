@@ -909,6 +909,23 @@ header h1 {
     font-size: 25px;
   }
 
+  .activity-content {
+    pointer-events: none;
+  }
+
+  .activity-normal:nth-child(odd) {
+    margin: 17px;
+  }
+
+  .activity-normal:before {
+    display: none;
+  }
+
+  .company-activities:nth-child(odd) .activity-content:nth-child(even),
+  .company-activities:nth-child(even) .activity-content:nth-child(odd) {
+    padding: 20px;
+  }
+
   .right-content {
     width: 100%;
   }
@@ -944,9 +961,13 @@ header h1 {
   }
 
   .development-example-content {
-    margin: 10px 10px;
-    padding: 10px;
+    margin: 10px 20px;
+    padding: 20px;
     flex-flow: column;
+  }
+
+  .site-url {
+    font-size: 15px;
   }
 
   .accordion {
