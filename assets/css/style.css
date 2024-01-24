@@ -195,6 +195,7 @@ a {
 }
 
 .president-img {
+  margin: auto;
   width: 70%;
   border-radius: 100%;
   border: solid 3px var(--back-ground-color);
@@ -445,7 +446,7 @@ a {
   background-image: url("../images/developExampleImage/background.jpg");
   background-repeat: no-repeat;
   position: relative;
-  background-size: cover;
+  /* background-size: cover; */
   z-index: 1;
 }
 
