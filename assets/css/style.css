@@ -130,8 +130,20 @@ a {
 
 .hr-left {
   margin-top: 20px;
-  margin-right: 60px;
+  margin-right: 60px !important;
   border-top: 5px solid black;
+}
+
+.hr-dev {
+  margin: 0;
+  margin-right: 60px;
+  padding-top: 20px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 5px solid white;
+  z-index: 1;
+  position: relative;
 }
 
 .section-title * {
@@ -143,16 +155,25 @@ a {
   display: grid;
   justify-content: end;
   align-items: end;
+  margin-left: 0;
+  margin-left: 1%;
+}
+
+.section-dev * {
+  color: white !important;
+  position: relative;
+  z-index: 1;
 }
 
 .title-eng {
   font: bold;
-  font-size: 6.4rem;
+  font-size: 5.4rem;
 }
 
 .title-ja {
   font-size: 2.2rem;
   font-weight: 700;
+  margin-left: 1%;
 }
 
 .fontTimesNewRoman {
@@ -173,6 +194,12 @@ a {
   height: 100%;
 }
 
+.president-img {
+  width: 70%;
+  border-radius: 100%;
+  border: solid 3px var(--back-ground-color);
+}
+
 .left-content {
   align-items: center;
   justify-content: center;
@@ -186,6 +213,7 @@ a {
   display: flex;
   flex-flow: column;
   margin: 40px 20% 10%;
+  justify-content: center;
 }
 
 .main-profile h1 {
@@ -197,14 +225,14 @@ a {
   margin: 0;
 }
 
+.sub-profile {
+  margin: 10px 15%;
+}
+
 .right-content {
   padding: 2% 0;
   width: 60%;
   background-color: var(--back-ground-color);
-}
-
-.sub-profile {
-  margin: 10px 20%;
 }
 
 .career {
@@ -227,72 +255,6 @@ a {
 .profile-history h4 {
   margin-bottom: 0;
 }
-
-#president-image {
-  width: 300px;
-  height: auto;
-  position: relative;
-}
-
-.image-tools {
-  display: flex;
-  justify-content: space-between;
-}
-
-.pagination {
-  width: 150px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.swiper-pagination-bullet {
-  width: 32px;
-  height: 2px;
-  background-color: #999;
-}
-
-.target {
-  background-color: black;
-}
-
-.image-component {
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: end;
-}
-
-.president-image-control .prevImage,
-.president-image-control .nextImage {
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.president-image-control .prevImage {
-  left: 0;
-}
-
-.president-image-control .nextImage {
-  right: 0;
-}
-
-.president-image-control .prevImage::before,
-.president-image-control .nextImage::before {
-  font-size: 30px;
-  color: #555;
-}
-
-.president-image-control .prevImage:hover,
-.president-image-control .nextImage:hover {
-  opacity: 0.5;
-}
-
-.president-image-control .prevImage.inActive,
-.president-image-control .nextImage.inActive {
-  opacity: 0.3;
-  pointer-events: none;
-}
-
 /* ********** Company ********** */
 
 .company-container {
@@ -311,7 +273,7 @@ a {
   justify-content: center;
   padding: 2.5%;
   background-color: var(--dark-color);
-  color: white;
+  color: var(--back-ground-color);
   border: solid 1px white;
   overflow: hidden;
   position: relative;
@@ -366,7 +328,6 @@ a {
   width: 60px;
   height: 5px;
   content: "";
-  /* border-radius: 3px; */
   background: var(--back-ground-color);
 }
 
@@ -468,32 +429,52 @@ a {
 
 /* ********** Develop ********** */
 
+#develop-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.5;
+  z-index: 0;
+}
+
 #develop-section {
+  background-image: url("../images/developExampleImage/background.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
 }
 
 .development-example {
   display: flex;
   width: 100%;
   padding: 20px 0;
-  background-image: url("../images/developExampleImage/background.jpg");
-  background-repeat: no-repeat;
 }
 
 .development-example-title {
   flex-basis: 50%;
   color: white;
+  padding: 20px;
+  z-index: 1;
 }
 
 .development-example-details {
   flex-basis: 50%;
+  z-index: 1;
 }
 
 .development-example-content {
   margin-bottom: 10px;
   align-items: center;
   display: flex;
-  background-color: white;
+  background-color: var(--back-ground-color);
   border-radius: 20px;
+  margin-right: 20px;
+  padding-right: 20px;
 }
 
 .project-img {
@@ -899,6 +880,14 @@ header h1 {
     left: 0;
   }
 
+  .title-eng {
+    font-size: 50px;
+  }
+
+  .title-ja {
+    font-size: 25px;
+  }
+
   .section-title {
     padding: 0px 30px;
   }
@@ -907,66 +896,57 @@ header h1 {
     font-size: 65px;
   }
 
-  .president-section {
+  .president-container {
     display: flex;
-    flex-flow: column-reverse;
+    flex-flow: column;
   }
 
-  .president-profile .president-profile-detail {
-    margin-left: 28px;
-  }
-
-  .president-image {
+  .left-content {
     width: 100%;
   }
 
-  .president-career {
-    padding: 10px;
+  .main-profile h1 {
+    font-size: 25px;
   }
 
-  .company-activities-title {
-    text-align: center;
+  .right-content {
+    width: 100%;
+  }
+
+  .career,
+  .sub-profile {
+    margin-left: 20px;
   }
 
   .company-activities {
-    font-size: 19px;
+    height: 200px;
   }
 
-  .company-activities-content span {
-    font-size: 20px;
+  .activity-normal span {
+    font-size: 15px;
   }
 
-  .company-activities-top {
-    display: block;
+  .development-example-title {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+
+  .development-example {
+    flex-flow: column;
   }
 
   .favorite-lang {
     flex-wrap: wrap;
   }
 
-  .flame {
-    font-size: 15px;
+  .favorite-lang-component {
+    padding: 20px 27px;
   }
 
-  .company-activities-content {
-    margin: 50px 12px !important;
-  }
-
-  .company-activities-content-below {
-    margin: 50px;
-  }
-
-  .project-title {
-    font-size: 18px;
-  }
-
-  .project-block {
-    margin-left: 10px;
-    margin-inline-start: 0 !important;
-  }
-
-  .project-block table {
-    width: 100%;
+  .development-example-content {
+    margin: 10px 10px;
+    padding: 10px;
+    flex-flow: column;
   }
 
   .accordion {
@@ -974,7 +954,6 @@ header h1 {
   }
 
   .footer {
-    margin-top: 50px;
     display: flex;
     flex-flow: column;
   }
