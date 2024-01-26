@@ -164,7 +164,7 @@ a {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-top: 5px solid var(--section-color);
+  border-bottom: 5px solid var(--header-color);
   z-index: 1;
   position: relative;
 }
@@ -204,7 +204,7 @@ a {
 }
 
 .section-dev * {
-  color: var(--section-color) !important;
+  color: var(--header-color) !important;
   position: relative;
   z-index: 1;
 }
