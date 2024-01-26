@@ -18,6 +18,8 @@ window.onload = (event) => {
       newElem.textContent = target;
       // タイピングアニメする要素の下に配置
       elem.appendChild(newElem);
+      // 表示する大元のstrongタグを表示する
+      elem.style.display = "inline";
       newElem = null;
     } else {
       //　段落ある場合
