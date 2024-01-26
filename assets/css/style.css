@@ -8,8 +8,11 @@
   /* バックグラウンドカラー */
   --back-ground-color: #e0dde0;
 
-  /* ホバー時等アクティブカラー */
-  --active-color: #00b7ee;
+  /* ヘッダーカラー */
+  --header-color: white;
+
+  /* セクションカラー */
+  --section-color: black;
 }
 
 body {
@@ -53,12 +56,12 @@ body {
 }
 
 .contents-link {
-  color: white;
+  color: var(--header-color);
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--dark-color);
   font-size: 30px;
 }
 
@@ -92,11 +95,31 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 120px;
-  color: #fff;
+  color: var(--back-ground-color);
   font-weight: bold;
   display: block;
   width: 100%;
   text-align: center;
+}
+
+.hero-text-typing span,
+.hero-text-typing {
+  display: none;
+}
+
+/*文字列後ろの線の設定*/
+.hero-text-typing::after {
+  content: "|";
+  animation: typing 0.8s ease infinite;
+}
+
+@keyframes typing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .hero > p {
@@ -125,13 +148,13 @@ a {
 .hr-right {
   margin-top: 20px;
   margin-left: 60px;
-  border-top: 5px solid black;
+  border-top: 5px solid var(--section-color);
 }
 
 .hr-left {
   margin-top: 20px;
   margin-right: 60px !important;
-  border-top: 5px solid black;
+  border-top: 5px solid var(--section-color);
 }
 
 .hr-dev {
@@ -141,13 +164,34 @@ a {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-bottom: 5px solid white;
+  border-top: 5px solid var(--section-color);
   z-index: 1;
   position: relative;
 }
 
+/* セクションアニメーション発火 */
+.president-section.is-animated,
+.company-section.is-animated,
+.develop-section.is-animated {
+  animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,
+  100% {
+    opacity: 1;
+  }
+}
+
 .section-title * {
-  color: black;
+  color: var(--section-color);
   margin: 0;
 }
 
@@ -160,7 +204,7 @@ a {
 }
 
 .section-dev * {
-  color: white !important;
+  color: var(--section-color) !important;
   position: relative;
   z-index: 1;
 }
@@ -437,7 +481,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
+  background: var(--dark-color);
   opacity: 0.5;
   z-index: 0;
 }
@@ -476,6 +520,7 @@ a {
   border-radius: 20px;
   margin-right: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .project-img {
@@ -708,7 +753,7 @@ header h1 {
 }
 
 .address {
-  border: 1px solid white;
+  border: 1px solid var(--back-ground-color);
   width: 20%;
   position: relative;
 }
@@ -716,7 +761,7 @@ header h1 {
 .address-label {
   background: var(--dark-color);
   padding: 3px 10px;
-  color: white;
+  color: var(--back-ground-color);
   position: absolute;
   top: -40px;
   left: 50%;
@@ -731,7 +776,7 @@ header h1 {
 }
 
 .footer a {
-  color: #fff;
+  color: var(--back-ground-color);
 }
 
 .footer-copy {
@@ -785,7 +830,7 @@ header h1 {
     right: 0;
     width: 100%;
     height: 3px;
-    background-color: black;
+    background-color: var(--header-color);
     content: "";
     transition: all 0.5s;
   }
@@ -824,11 +869,10 @@ header h1 {
     right: 0;
     z-index: -1;
     width: 25rem;
-    background-color: white;
+    background-color: var(--dark-color);
     content: "";
     transform: skewX(-15deg) translateX(100%);
     transform-origin: bottom right;
-    /* transition: transform 0.3s; */
   }
 
   #menu a {
@@ -839,6 +883,7 @@ header h1 {
     transform: translateX(300%);
     transition: all 0.15s, transform 0.5s;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    color: var(--header-color);
   }
 
   #hamburger:checked + label .burger::before,
@@ -872,7 +917,7 @@ header h1 {
   }
 
   #hamburger:checked ~ .light-dark {
-    background-color: #000;
+    background-color: var(--dark-color);
     opacity: 0.5;
     width: 100%;
     height: 100%;

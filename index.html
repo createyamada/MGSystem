@@ -23,6 +23,8 @@
   <!-- 利用するJSファイル -->
   <script src="assets/js/hero.js" defer></script>
   <script src="assets/js/header.js" defer></script>
+  <script src="assets/js/section.js" defer></script>
+  <script src="assets/js/typing.js" defer></script>
   <script src="https://kit.fontawesome.com/9b69c5ff83.js" crossorigin="anonymous"></script>
 
   <title>株式会社MGSystems</title>
@@ -78,7 +80,7 @@
   ================================== */ -->
   <section id="hero-section">
     <div class="hero">
-      <strong>MGSystems</strong>
+      <strong class="hero-text-typing">MGSystems</strong>
       <canvas id="canvas"></canvas>
       <video autoplay loop muted preload playsinline>
         <source src="assets/video/hero.mp4" type="video/mp4">
@@ -91,12 +93,15 @@
   <!-- /* ==================================
         President-section
     ================================== */ -->
-  <section id="president-section" class="whiteArea">
-    <hr class="hr-left"/>
-    <div class="section-title">
-      <h1 class="title-eng">President</h1>
-      <h4 class="title-ja">代表取締役</h4>
+  <section id="president-section">
+    <div class="black-area">
+      <hr class="hr-left"/>
+      <div class="section-title president-section">
+        <h1 class="title-eng">President</h1>
+        <h4 class="title-ja">代表取締役</h4>
+      </div>
     </div>
+
 
     <div class="president-container">
       <!-- 左側のコンテンツ -->
@@ -180,10 +185,12 @@
         Company-section
     ================================== */ -->
   <section id="company-section">
-    <hr class="hr-right"/>
-    <div class="section-title section-even">
-      <h1 class="title-eng">Service</h1>
-      <h4 class="title-ja">サービス</h4>
+    <div class="black-area">
+      <hr class="hr-right"/>
+      <div class="section-title section-even company-section">
+        <h1 class="title-eng">Service</h1>
+        <h4 class="title-ja">サービス</h4>
+      </div>
     </div>
     <div class="company-container">
       <div class="company-activities">
@@ -224,7 +231,7 @@
     ================================== */ -->
   <section id="develop-section">
     <hr class="hr-dev"/>
-    <div class="section-title section-dev">
+    <div class="section-title section-dev develop-section">
       <h1 class="title-eng">Develop</h1>
       <h4 class="title-ja">開発事例</h4>
     </div>
