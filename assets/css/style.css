@@ -755,7 +755,7 @@ header h1 {
 
 .address {
   border: 1px solid var(--back-ground-color);
-  width: 20%;
+  width: 25%;
   position: relative;
 }
 
@@ -774,6 +774,10 @@ header h1 {
 .address-content {
   text-align: center;
   padding: 20px 5px;
+}
+
+.address-content a {
+  font-size: 20px;
 }
 
 .footer a {
