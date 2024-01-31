@@ -100,11 +100,9 @@ a {
   display: block;
   width: 100%;
   text-align: center;
-  display: none;
 }
 
-.hero-text-typing span,
-.hero-text-typing {
+.hero-text-typing span {
   display: none;
 }
 

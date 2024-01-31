@@ -3,7 +3,8 @@ window.onload = (event) => {
   //　タイピングアニメーションをする要素を取得
   let elem = document.getElementsByClassName("hero-text-typing")[0];
   // 表示するための文字列を取得
-  let text = elem.textContent;
+  // let text = elem.textContent;
+  let text = "MGSystems";
   // 表示するテキストを空にする
   elem.textContent = "";
   // 段落のための変数
