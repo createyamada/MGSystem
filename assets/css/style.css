@@ -399,6 +399,12 @@ a {
   display: none;
 }
 
+.activity-hover-first-letter {
+  font-size: 40px;
+  line-height: 0;
+  font-weight: bold;
+}
+
 .activity-content:hover .activity-normal {
   display: none;
 }
@@ -961,11 +967,26 @@ header h1 {
   }
 
   .activity-content {
-    pointer-events: none;
+    /* pointer-events: none; */
   }
 
-  .activity-normal:nth-child(odd) {
-    margin: 17px;
+  .activity-normal {
+    margin: 0;
+  }
+
+  .activity-normal-small {
+    writing-mode: vertical-rl;
+    padding: 0;
+  }
+
+  .activity-hover {
+    margin: 10px;
+  }
+
+  .activity-hover-first-letter {
+    font-size: initial;
+    font-weight: initial;
+    line-height: normal;
   }
 
   .activity-normal:before {
