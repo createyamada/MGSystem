@@ -678,6 +678,19 @@ header h1 {
   line-height: 1.4rem;
   padding-right: 30px;
 }
+
+#trademark-details {
+  padding: 10px;
+  border: 0px;
+  background-color: var(--back-ground-color);
+}
+
+#trademark-summary {
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px;
+}
+
 .social a:before,
 .social a:after {
   transition: all 0.4s ease-in-out 0.1s;
