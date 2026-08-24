@@ -18,7 +18,7 @@
   <!-- 利用するフォントURL -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet">
 
   <!-- 利用するJSファイル -->
   <!-- <script src="assets/js/hero.js" defer></script> -->
@@ -56,7 +56,7 @@
     </nav>
 
     <div class="sp-nav">
-      <input type="checkbox" id="hamburger">
+      <input type="checkbox" id="hamburger" aria-label="メニューを開閉">
       <label for="hamburger">
         <span class="burger">
           <span class="bar"></span>
@@ -183,8 +183,6 @@
         </div>
       </div>
     </div>
-
-    </div>
   </section>
 
   <!-- /* ==================================
@@ -200,13 +198,13 @@
     </div>
     <div class="company-container">
       <div class="company-activities">
-        <div class="activity-content">
+        <div class="activity-content" data-index="01" data-category="CONSULTING">
           <div class="activity-normal"><span>ITコンサルタント</span></div>
           <div class="activity-hover"><span class="activity-hover-first-letter">業</span>務効率化のためのDX化、ヒューマンエラー防止のためのDX化課題を解決に導く課題解決を提供できます。</div>
           <span class="activity-line"></span>
           <span class="activity-over"></span>
         </div>
-        <div class="activity-content">
+        <div class="activity-content" data-index="02" data-category="WEB DESIGN">
           <div class="activity-normal  activity-normal-small"><span>ホームページ制作</span></div>
           <p class="activity-hover"><span class="activity-hover-first-letter">デ</span>ザイン設計からの納品まで一連の開発を行うことができます。</p>
           <span class="activity-line"></span>
@@ -216,13 +214,13 @@
       </div>
 
       <div class="company-activities">
-        <div class="activity-content">
+        <div class="activity-content" data-index="03" data-category="SUPPORT">
           <div class="activity-normal activity-normal-small"><span>悩み相談</span></div>
           <p class="activity-hover"><span class="activity-hover-first-letter">金</span>融機関、中小SE、大企業SESの経験をもとに問題の解決、解消、軽減に導けます。</p>
           <span class="activity-line"></span>
           <span class="activity-over"></span>
         </div>
-        <div class="activity-content">
+        <div class="activity-content" data-index="04" data-category="DEVELOPMENT">
           <div class="activity-normal"><span>システム設計・開発</span></div>
           <p class="activity-hover"><span class="activity-hover-first-letter">様</span>々な、システム設計、開発に携わった経験をもとに<br>様々な視点からの設計、開発を行うことができます。</p>
           <span class="activity-line"></span>
@@ -249,7 +247,7 @@
       <div class="development-example-details">
         <div class="development-example-content">
           <div>
-            <img class="project-img" src="assets/images/projectLogo/phythics.png" />
+            <img class="project-img" src="assets/images/projectLogo/phythics.png" alt="物理計算システムのアイコン">
           </div>
           <div>
             <h3 class="project-title">物理計算システム</h3>
@@ -258,7 +256,7 @@
               物理学の王道である運動方程式を利用して放物運動の予測等をでき、プログラムにも、物理学にも興味を持ってもらえるシステムだと思います。<br>
             </p>
             <p class="project-block-url">サイトURL：<a href="https://calc-physics-system.onrender.com" target="_blank"
-                rel="物理計算システム" class="site-url">物理シミュレートシステム</a></p>
+                rel="noopener noreferrer" class="site-url">物理シミュレートシステム</a></p>
             <p class="project-block-dev">
               担当工程：弊社代表が要件定義、設計、開発、デプロイを行う<br>
               開発環境：Html／css／JavaScript／Vuejs／PHP／Laravel／Docker
@@ -268,7 +266,7 @@
 
         <div class="development-example-content">
           <div>
-            <img class="project-img" src="assets/images/projectLogo/graph.png" />
+            <img class="project-img" src="assets/images/projectLogo/graph.png" alt="貯金偏差値算出システムのアイコン">
           </div>
           <div>
             <h3 class="project-title">貯金偏差値算出システム</h3>
@@ -277,7 +275,7 @@
               e-statという外部APIを利用して、自身がどのくらいの位置にいるのかを可視化して貯金に対して意識を変えるシステムだと思います。<br>
             </p>
             <p class="project-block-url">サイトURL：<a href="https://saving-deviation-com-3yka.onrender.com" target="_blank"
-                rel="貯金偏差値算出システム" class="site-url">貯金偏差値算出システム</a></p>
+                rel="noopener noreferrer" class="site-url">貯金偏差値算出システム</a></p>
             <p class="project-block-dev">
               担当工程：弊社代表が要件定義、設計、開発、デプロイを行う<br>
               開発環境：Html／css／JavaScript／jQuery／PHP／Laravel／Docker
@@ -287,7 +285,7 @@
 
         <div class="development-example-content">
           <div>
-            <img class="project-img" src="assets/images/projectLogo/analysis.png" />
+            <img class="project-img" src="assets/images/projectLogo/analysis.png" alt="翌日株価予想システムのアイコン">
           </div>
           <div>
             <h3 class="project-title">翌日株価予想システム</h3>
@@ -297,7 +295,7 @@
               投資の予想、売買の意思決定には利用しないでください。<br>
             </p>
             <p class="project-block-url">サイトURL：<a href="https://kabunseki-web.onrender.com" target="_blank"
-                rel="KABUMMIKE" class="site-url">分析サイト</a></p>
+                rel="noopener noreferrer" class="site-url">分析サイト</a></p>
             <p class="project-block-dev">
               担当工程：弊社代表が要件定義、設計、デザイン設計、開発、デプロイを行う<br>
               開発環境：Html／css／TypeScript／React／Python／FastAPI
@@ -307,7 +305,7 @@
 
         <div class="development-example-content">
           <div>
-            <img class="project-img" src="assets/images/projectLogo/browser.png" />
+            <img class="project-img" src="assets/images/projectLogo/browser.png" alt="企業ホームページのアイコン">
           </div>
           <div>
             <h3 class="project-title">企業ホームページ</h3>
@@ -316,7 +314,7 @@
               デザイン、コーディングを行い、操作性を考え作成した、見やすいホームページになっていると思います。<br>
             </p>
             <p class="project-block-url">サイトURL：<a href="https://mgsystems.onrender.com" target="_blank"
-                rel="株式会社MGSystems" class="site-url">株式会社MGSystems</a></p>
+                rel="noopener noreferrer" class="site-url">株式会社MGSystems</a></p>
             <p class="project-block-dev">
               担当工程：弊社代表が要件定義、設計、デザイン設計、開発、デプロイを行う<br>
               開発環境：Html／css／JavaScript／jQuery
@@ -325,15 +323,14 @@
         </div>
         <div class="development-example-content">
           <div>
-            <img class="project-img" src="assets/images/projectLogo/mobile.png" />
+            <img class="project-img" src="assets/images/projectLogo/mobile.png" alt="勉強時間管理アプリのアイコン">
           </div>
           <div>
             <h3 class="project-title">勉強時間管理アプリ</h3>
             <p class="project-block-desc">
               代表が自身の経験から勉強時間を他人と共有できるモバイルアプリを開発<br>
             </p>
-            <p class="project-block-url">サイトURL：<a href="" target="_blank"
-                rel="準備中" class="site-url">準備中</a></p>
+            <p class="project-block-url">サイトURL：<span class="site-url is-disabled">準備中</span></p>
             <p class="project-block-dev">
               担当工程：弊社代表が要件定義、設計、デザイン設計、開発、デプロイを行う<br>
               開発環境：Dart／Flutter／Firebase
@@ -349,31 +346,31 @@
     <h3 class="favorite-title">得意言語</h3>
     <div class="favorite-lang">
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/java.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/java.svg" alt="Java">
         <p class="favorite-lang-detail">Java</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/php.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/php.svg" alt="PHP">
         <p class="favorite-lang-detail">PHP</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/dart.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/dart.svg" alt="Dart">
         <p class="favorite-lang-detail">Dart</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/javascript.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/javascript.svg" alt="JavaScript">
         <p class="favorite-lang-detail">JS</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/typescript.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/typescript.svg" alt="TypeScript">
         <p class="favorite-lang-detail">TS</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/html-5.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/html-5.svg" alt="HTML">
         <p class="favorite-lang-detail">Html</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/css-3.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/css-3.svg" alt="CSS">
         <p class="favorite-lang-detail">CSS</p>
       </div>
     </div>
@@ -381,27 +378,27 @@
     <h3 class="favorite-title">得意ライブラリ</h3>
     <div class="favorite-lang">
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/spring-icon.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/spring-icon.svg" alt="Spring">
         <p class="favorite-lang-detail flame">Spring</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/laravel.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/laravel.svg" alt="Laravel">
         <p class="favorite-lang-detail flame">Laravel</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/flutter.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/flutter.svg" alt="Flutter">
         <p class="favorite-lang-detail flame">Flutter</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/react.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/react.svg" alt="React.js">
         <p class="favorite-lang-detail flame">React.js</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/vue.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/vue.svg" alt="Vue.js">
         <p class="favorite-lang-detail flame">Vue.js</p>
       </div>
       <div class="favorite-lang-component">
-        <img class="favorite-lang-img" src="assets/images/langLogo/jquery.svg" />
+        <img class="favorite-lang-img" src="assets/images/langLogo/jquery.svg" alt="jQuery">
         <p class="favorite-lang-detail flame">jQuery</p>
       </div>
     </div>
@@ -432,7 +429,7 @@
     <ul class="accordion">
       <li class="tab">
         <div class="social youtube">
-          <a href="https://www.youtube.com/channel/UCoe8uMztnDY_pJEoCnZvdRg" target="_blank">Youtube</a>
+          <a href="https://www.youtube.com/channel/UCoe8uMztnDY_pJEoCnZvdRg" target="_blank" rel="noopener noreferrer">Youtube</a>
         </div>
         <div class="content">
           <h1>Youtube</h1>
@@ -441,7 +438,7 @@
       </li>
       <li class="tab">
         <div class="social instagram">
-          <a href="https://www.instagram.com/flowlightyamada" target="_blank">Instagram</a>
+          <a href="https://www.instagram.com/flowlightyamada" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
         <div class="content">
           <h1>Instagram</h1>
@@ -450,7 +447,7 @@
       </li>
       <li class="tab">
         <div class="social twitter">
-          <a href="https://twitter.com/mg_kk3939" target="_blank">Twitter</a>
+          <a href="https://twitter.com/mg_kk3939" target="_blank" rel="noopener noreferrer">Twitter</a>
         </div>
         <div class="content">
           <h1>Twitter</h1>
@@ -459,7 +456,7 @@
       </li>
       <li class="tab">
         <div class="social github">
-          <a href="https://github.com/createyamada" target="_blank">GitHub</a>
+          <a href="https://github.com/createyamada" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
         <div class="content">
           <h1>GitHub</h1>
@@ -477,18 +474,18 @@
 
     <div class="footer">
       <div class="SNS">
-        <a href="https://www.youtube.com/channel/UCoe8uMztnDY_pJEoCnZvdRg" target="_blank"><img class="SNS-logo"
+        <a href="https://www.youtube.com/channel/UCoe8uMztnDY_pJEoCnZvdRg" target="_blank" rel="noopener noreferrer"><img class="SNS-logo"
             src="assets/images/snsLogo/youtube.png" alt="youtube"></a>
-        <a href="https://twitter.com/mg_kk3939" target="_blank"><img class="SNS-logo"
+        <a href="https://twitter.com/mg_kk3939" target="_blank" rel="noopener noreferrer"><img class="SNS-logo"
             src="assets/images/snsLogo/twitter.png" alt="twitter"></a>
-        <a href="https://www.instagram.com/flowlightyamada" target="_blank"><img class="SNS-logo"
+        <a href="https://www.instagram.com/flowlightyamada" target="_blank" rel="noopener noreferrer"><img class="SNS-logo"
             src="assets/images/snsLogo/instagram.png" alt="instagram"></a>
-        <a href="https://github.com/createyamada" target="_blank"><img class="SNS-logo"
+        <a href="https://github.com/createyamada" target="_blank" rel="noopener noreferrer"><img class="SNS-logo"
             src="assets/images/snsLogo/github.png" alt="github"></a>
       </div>
 
       <div class="footer-logo">
-        <img id="footer-logo" src="assets/images/companyLogo/MGLogoWhite.png" alt="">
+        <img id="footer-logo" src="assets/images/companyLogo/MGLogoWhite.png" alt="MGSystems">
         <small class="footer-copy fontTimesNewRoman">Copyright ©MGSystems</small>
       </div>
 
@@ -496,10 +493,11 @@
       <div class="address">
         <h3 class="address-label">ADDRESS</h3>
         <div class="address-content">
+          <p>
           〒259-0124<br />
           神奈川県中郡二宮町山西<br />
-          <a href="https://maps.app.goo.gl/zepBYVGzjjmRyVve6" target="_blank">Google Mapはこちら</a></br>
-          TEL: 現在準備中</br>
+          <a href="https://maps.app.goo.gl/zepBYVGzjjmRyVve6" target="_blank" rel="noopener noreferrer">Google Mapはこちら</a><br>
+          TEL: 現在準備中<br>
           Email: mgsystems.priv.co.ltd@gmail.com
           </p>
         </div>
