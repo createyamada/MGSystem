@@ -14,6 +14,7 @@
   <!-- 利用するCSSファイル -->
   <link rel="stylesheet" type="text/css" href="assets/css/sanitize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/redesign.css">
 
   <!-- 利用するフォントURL -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
 
   <!-- 利用するJSファイル -->
   <!-- <script src="assets/js/hero.js" defer></script> -->
-  <script src="assets/js/header.js" defer></script>
+  <script src="assets/js/header.js?v=20260902-2" defer></script>
   <script src="assets/js/section.js" defer></script>
   <script src="assets/js/typing.js" defer></script>
   <script src="https://kit.fontawesome.com/9b69c5ff83.js" crossorigin="anonymous"></script>
@@ -78,13 +79,33 @@
   <!-- /* ==================================
       Hero
   ================================== */ -->
-  <section id="hero-section">
+  <section id="hero-section" data-header-theme="dark">
     <div class="hero">
-      <strong class="hero-text-typing"></strong>
+      <div class="hero-content">
+        <p class="hero-kicker">MGSystems / DIGITAL INNOVATION</p>
+        <h2>Designing systems<br>for a smarter tomorrow.</h2>
+        <p class="hero-lead">発想を仕組みに。可能性を、次のスタンダードへ。</p>
+      </div>
+      <a class="hero-scroll" href="#president-section" aria-label="代表紹介へスクロール">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="hero-scroll-line"></span>
+      </a>
       <canvas id="canvas"></canvas>
-      <video autoplay loop muted preload playsinline>
-        <source src="assets/video/hero.mp4" type="video/mp4">
-      </video>
+      <video id="hero-video"
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_3HIUd6x6YcTzSxWW1qIofwiZJNR/hf_20260902_130645_c126f455-3667-43e1-a2dd-795039b38313.mp4?v=20260902-130645"
+        autoplay loop muted preload="auto" playsinline aria-label="MGSystemsのヒーロー映像"></video>
+    </div>
+  </section>
+
+
+  <section class="mission-statement" data-header-theme="dark">
+    <div class="mission-statement-inner">
+      <p class="mission-label">OUR PURPOSE / MGSystems</p>
+      <h2>複雑な課題を、<br>明快なシステムへ。</h2>
+      <div class="mission-bottom">
+        <p>業務と人を深く理解し、設計と技術の力で<br>次の選択肢をつくります。</p>
+        <span>FROM IDEA TO IMPACT</span>
+      </div>
     </div>
   </section>
 
@@ -93,7 +114,7 @@
   <!-- /* ==================================
         President-section
     ================================== */ -->
-  <section id="president-section">
+  <section id="president-section" data-header-theme="light">
     <div class="black-area">
       <hr class="hr-left"/>
       <div class="section-title president-section">
@@ -113,35 +134,12 @@
             <h1>フローライト山田</h1>
             <h4>代表取締役</h4>
           </div>
-
-          <div class="sub-profile">
-            <h3>-出身-</h3>
-            <p>神奈川県平塚市</p>
-          </div>
-
-          <div class="sub-profile">
-            <h3>-生年月日-</h3>
-            <p>春ではないと思われる</p>
-          </div>
-
-          <div class="sub-profile">
-            <h3>-趣味-</h3>
-            <p>・ランニング</p>
-            <p>・宇宙</p>
-            <p>・読書</p>
-            <p>・スポーツ観戦</p>
-            <p>・物理学</p>
-          </div>
-
-          <div class="sub-profile">
-            <h3>-座右の銘-</h3>
-            <p>勝ちに不思議な勝ちなし、負けに不思議な負けなし</p>
-            <p>覚悟とは、暗闇の荒野に進むべき道を切り開くことだ</p>
-          </div>
         </div>
       </div>
       <!-- 右側のコンテンツ -->
       <div class="right-content">
+        <details class="president-disclosure career-disclosure" open>
+          <summary>職歴・学歴</summary>
         <div class="career">
           <div class="profile-history-content">
             <h3 class="career-label">-職歴-</h3>
@@ -181,6 +179,7 @@
             </div>
           </div>
         </div>
+        </details>
       </div>
     </div>
   </section>
@@ -188,7 +187,7 @@
   <!-- /* ==================================
         Company-section
     ================================== */ -->
-  <section id="company-section">
+  <section id="company-section" data-header-theme="light">
     <div class="black-area">
       <hr class="hr-right"/>
       <div class="section-title section-even company-section">
@@ -198,15 +197,17 @@
     </div>
     <div class="company-container">
       <div class="company-activities">
-        <div class="activity-content" data-index="01" data-category="CONSULTING">
+        <div class="activity-content" data-index="01" data-category="CONSULTING" data-visual="consulting">
+          <img class="service-visual" src="assets/images/service/consulting-user.png" alt="ITコンサルタントが顧客と戦略を整理するイメージ" loading="lazy">
           <div class="activity-normal"><span>ITコンサルタント</span></div>
           <div class="activity-hover"><span class="activity-hover-first-letter">業</span>務効率化のためのDX化、ヒューマンエラー防止のためのDX化課題を解決に導く課題解決を提供できます。</div>
           <span class="activity-line"></span>
           <span class="activity-over"></span>
         </div>
-        <div class="activity-content" data-index="02" data-category="WEB DESIGN">
-          <div class="activity-normal  activity-normal-small"><span>ホームページ制作</span></div>
-          <p class="activity-hover"><span class="activity-hover-first-letter">デ</span>ザイン設計からの納品まで一連の開発を行うことができます。</p>
+        <div class="activity-content" data-index="02" data-category="DEVELOPMENT" data-visual="development">
+          <img class="service-visual" src="assets/images/service/development-v3.png" alt="プログラマーがアプリケーションを設計・開発するイメージ" loading="lazy">
+          <div class="activity-normal"><span>システム設計・開発</span></div>
+          <p class="activity-hover"><span class="activity-hover-first-letter">様</span>々な、システム設計、開発に携わった経験をもとに<br>様々な視点からの設計、開発を行うことができます。</p>
           <span class="activity-line"></span>
           <span class="activity-over"></span>
         </div>
@@ -214,15 +215,17 @@
       </div>
 
       <div class="company-activities">
-        <div class="activity-content" data-index="03" data-category="SUPPORT">
-          <div class="activity-normal activity-normal-small"><span>悩み相談</span></div>
-          <p class="activity-hover"><span class="activity-hover-first-letter">金</span>融機関、中小SE、大企業SESの経験をもとに問題の解決、解消、軽減に導けます。</p>
+        <div class="activity-content" data-index="03" data-category="WEB DESIGN" data-visual="web">
+          <img class="service-visual" src="assets/images/service/web-design-user.png" alt="パソコンでレスポンシブなホームページを制作するイメージ" loading="lazy">
+          <div class="activity-normal activity-normal-small"><span>ホームページ制作</span></div>
+          <p class="activity-hover"><span class="activity-hover-first-letter">デ</span>ザイン設計からの納品まで一連の開発を行うことができます。</p>
           <span class="activity-line"></span>
           <span class="activity-over"></span>
         </div>
-        <div class="activity-content" data-index="04" data-category="DEVELOPMENT">
-          <div class="activity-normal"><span>システム設計・開発</span></div>
-          <p class="activity-hover"><span class="activity-hover-first-letter">様</span>々な、システム設計、開発に携わった経験をもとに<br>様々な視点からの設計、開発を行うことができます。</p>
+        <div class="activity-content" data-index="04" data-category="SUPPORT" data-visual="support">
+          <img class="service-visual" src="assets/images/service/support-user.png" alt="対話を通じて悩みを整理し解決へ導くイメージ" loading="lazy">
+          <div class="activity-normal activity-normal-small"><span>悩み相談</span></div>
+          <p class="activity-hover"><span class="activity-hover-first-letter">金</span>融機関、中小SE、大企業SESの経験をもとに問題の解決、解消、軽減に導けます。</p>
           <span class="activity-line"></span>
           <span class="activity-over"></span>
         </div>
@@ -234,7 +237,7 @@
   <!-- /* ==================================
         Develop-section
     ================================== */ -->
-  <section id="develop-section">
+  <section id="develop-section" data-header-theme="dark">
     <hr class="hr-dev"/>
     <div class="section-title section-dev develop-section">
       <h1 class="title-eng">Develop</h1>
@@ -341,8 +344,11 @@
     </div>
   </section>
 
-  <div class="favorite-section">
-    <h1 class="favarite-section-title">得意技術</h1>
+  <div class="favorite-section" data-header-theme="light">
+    <div class="section-title favorite-section-heading">
+      <h1 class="title-eng">Technology</h1>
+      <h4 class="title-ja">得意技術</h4>
+    </div>
     <h3 class="favorite-title">得意言語</h3>
     <div class="favorite-lang">
       <div class="favorite-lang-component">
@@ -404,7 +410,7 @@
     </div>
   </div>
 
-  <details id="trademark-details">
+  <details id="trademark-details" data-header-theme="dark">
     <summary id="trademark-summary">掲載しているロゴや名称の登録商標について</summary>
     <p>Oracle、Java、MySQL、JavaScript 、SwingはOracle Corporation 及びその子会社、関連会社の米国及びその他の国における登録商標です。</p>
     <p>Spring、Spring Boot、Spring Frameworkは、Pivotal Software, Inc.の米国およびその他の国における登録商標です。</p>
@@ -469,7 +475,7 @@
   <!-- /* ==================================
         Footer
     ================================== */ -->
-  <footer>
+  <footer data-header-theme="dark">
 
 
     <div class="footer">
