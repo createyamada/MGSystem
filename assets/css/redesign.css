@@ -2605,23 +2605,14 @@ footer {
 }
 
 /* Header logo breathing room */
-.page-header {
-  height: 120px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.logo {
-  width: 100px;
-  height: 100px;
-}
-
+.page-header,
 .page-header.is-light-background {
   height: 88px;
   padding-top: 9px;
   padding-bottom: 9px;
 }
 
+.logo,
 .page-header.is-light-background .logo {
   width: 70px;
   height: 70px;
@@ -2639,5 +2630,23 @@ footer {
   .page-header.is-light-background .logo {
     width: 80px;
     height: 80px;
+  }
+}
+
+/* Compact section headings for iPhone */
+@media screen and (max-width: 600px) {
+  .section-title .title-eng,
+  #company-section .section-title .title-eng {
+    font-size: clamp(2.35rem, 12vw, 3rem);
+    line-height: 0.92;
+    letter-spacing: -0.055em;
+    white-space: nowrap;
+  }
+
+  .section-title .title-ja,
+  #company-section .section-title .title-ja {
+    margin-top: 14px;
+    font-size: 0.68rem;
+    line-height: 1.5;
   }
 }
